@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Woodpecker CI Repository Overview",
+  "version": "1.0.0",
+  "description": "Adds a cross forge repository overview to the Woodpecker CI navigation bar",
+  "host_permissions": ["<all_urls>"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["style.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
