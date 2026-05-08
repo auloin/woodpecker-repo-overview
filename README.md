@@ -36,7 +36,7 @@ By default the extension activates on all URLs and only injects when it detects 
 "content_scripts": [
   {
     "matches": ["https://ci.yourcompany.com/*"],
-    ...
+    // ...
   }
 ]
 ```
